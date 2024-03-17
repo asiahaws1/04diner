@@ -1,0 +1,32 @@
+header, nav, main, footer {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.allcards {
+   display:flex;
+   justify-content: center;
+   flex-wrap: wrap;
+
+    section{
+        flex-basis: calc(33.333% - (($gutter*2)/3))
+    }
+}
+
+footer div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+
+nav {
+    display:flex;
+    justify-content: right;
+    button {display: none;}
+    ul, ul.open {
+        margin-left: 2vw;
+        border: none;
+        display: flex;
+    }// end ul
+    ul li {border: none;}
+}
